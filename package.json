@@ -1,0 +1,28 @@
+{
+  "name": "@luxfi/docs-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lux Network documentation template - fork for any docs site",
+  "scripts": {
+    "dev": "next dev --port 3003",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@luxfi/logo": "^0.0.5",
+    "fumadocs-core": "^15.3.4",
+    "fumadocs-ui": "^15.3.4",
+    "lucide-react": "^0.468.0",
+    "next": "^15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "tailwindcss": "^4.1.8",
+    "typescript": "^5.8.3"
+  }
+}
