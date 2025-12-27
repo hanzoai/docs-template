@@ -17,3 +17,9 @@ yarn-error.log*
 
 # env
 .env*.local
+
+# AI assistant symlinks (symlinked to LLM.md)
+AGENTS.md
+CLAUDE.md
+QWEN.md
+GEMINI.md
