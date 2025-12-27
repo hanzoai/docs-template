@@ -8,8 +8,8 @@ A documentation template for Lux Network projects, built with [Fumadocs](https:/
 - **Fast** - Built with Next.js and optimized for performance
 - **Searchable** - Built-in search functionality
 - **Responsive** - Works on all device sizes
-- **Social Links** - Pre-configured sidebar with Discord, X, Warpcast icons
-- **Lux Branding** - Includes @luxfi/logo package
+- **Lux Branding** - Uses @luxfi/logo for favicon, OG image, and header
+- **Social Links** - Pre-configured with Lux ecosystem links (Discord, X, Warpcast)
 
 ## Quick Start
 
@@ -76,6 +76,28 @@ Update `content/docs/meta.json` with your page structure.
 ```bash
 pnpm dev
 ```
+
+## Branding
+
+The template uses `@luxfi/logo` for consistent Lux branding:
+
+- **Favicon**: `public/favicon.svg` - Uses official Lux triangle logo
+- **OG Image**: Generate with `pnpm generate:og`
+- **Header**: Logo component from `@luxfi/logo`
+
+### Generate OG Image
+
+```bash
+# Install sharp for PNG generation (optional)
+pnpm add -D sharp
+
+# Generate OG image
+pnpm generate:og
+```
+
+This creates `public/og.svg` (and `public/og.png` if sharp is installed).
+
+Edit `scripts/generate-og.js` to customize the title and description.
 
 ## File Structure
 
