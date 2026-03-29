@@ -1,9 +1,10 @@
+import { createMDX } from '@hanzo/docs-mdx/next';
+
+const withMDX = createMDX();
+
 /** @type {import('next').NextConfig} */
 const config = {
-  output: 'export',
-  images: {
-    unoptimized: true
-  }
-}
+  reactStrictMode: true,
+};
 
-export default config
+export default withMDX(config);

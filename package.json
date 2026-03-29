@@ -1,34 +1,32 @@
 {
-  "name": "@luxfi/docs-template",
-  "version": "1.0.0",
+  "name": "docs-template",
+  "version": "0.0.0",
   "private": true,
-  "description": "Lux Network documentation template - fork for any docs site",
   "scripts": {
-    "dev": "next dev --port 3003",
     "build": "next build",
+    "dev": "next dev",
     "start": "next start",
-    "export": "next build && next export",
-    "generate:og": "node scripts/generate-og.js"
+    "types:check": "@hanzo/docs-mdx && next typegen && tsc --noEmit",
+    "postinstall": "@hanzo/docs/mdx"
   },
   "dependencies": {
-    "@luxfi/logo": "^1.0.0",
-    "fumadocs-core": "^15.3.4",
-    "fumadocs-ui": "^15.3.4",
-    "gray-matter": "^4.0.3",
-    "lucide-react": "^0.468.0",
-    "next": "^15.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-markdown": "^10.1.0",
-    "remark-gfm": "^4.0.1"
+    "@hanzo/docs-core": "16.7.5",
+    "@hanzo/docs-mdx": "14.2.11",
+    "@hanzo/docs-ui": "16.7.5",
+    "lucide-react": "^1.0.1",
+    "next": "16.2.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^22.15.21",
-    "@types/react": "^19.1.5",
-    "autoprefixer": "^10.4.23",
-    "tailwindcss": "^4.1.8",
-    "typescript": "^5.8.3"
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
   }
 }
