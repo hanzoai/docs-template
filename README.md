@@ -2,8 +2,10 @@
 
 # docs-template
 
-This is a Next.js application generated with
-[Create Hanzo Docs](https://github.com/hanzoai/docs).
+[![Deploy on Hanzo](https://hanzo.app/deploy-badge.svg)](https://hanzo.app/new?template=https://github.com/hanzoai/docs-template)
+
+A documentation site built with Next.js and
+[Create Hanzo Docs](https://github.com/hanzoai/docs) (MDX content, full-text search).
 
 Run development server:
 
