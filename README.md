@@ -1,5 +1,3 @@
-<p align="center"><img src=".github/hero.svg" alt="docs-template" width="880"></p>
-
 # docs-template
 
 This is a Next.js application generated with
